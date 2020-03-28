@@ -7,19 +7,21 @@ PATH=$PATH:/snap/bin
 
 # ZSH
 export ZSH="$HOME/.oh-my-zsh" # installation path
-source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-plugins=(git)
-
 # ZSH theming
-SH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status ram swap)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
 
 # MISC 
 # You may need to manually set your language environment
